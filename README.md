@@ -35,7 +35,7 @@ You can install all dependencies by running `pip install -r requirements.txt`.
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pyafv/assets/blob/main/jupyter/custom_plot.ipynb)
 
-Figure 1 is the plotting example shown in the `pyafv` documentation; click the badge above to run the notebook directly on **Google Colab**.
+Figure 1 is the plotting example given by the `pyafv` documentation; click the badge above to run the notebook directly on **Google Colab**.
 
 
 ### Figure 2
@@ -57,7 +57,14 @@ To generate the $P_0$—Λ phase digram for the steady-state $\ell_0$, run [trun
 
 ### Figure 6
 
-> [WIP] Note: remember to include plotting code for the deformable-polygon (DP) model...
+Run [calibration/main.py](/calibration/main.py) to execute the simulation and generate snapshots of a cell doublet subjected to external force dipoles in the deformable-polygon (DP) model.
+
+To sweep the $P_0$—Λ parameter plane for detachment forces in DP model, submit [calibration/run.slurm](/calibration/run.slurm), which executes [calibration/dp_detach.py](/calibration/dp_detach.py). The results are saved to [calibration/detachment_forces_DP.npy](/calibration/detachment_forces_DP.npy). Then run [calibration/plot.py](/calibration/plot.py) to generate panel (b).
+
+> [!NOTE]
+> The `auto_calibrate` method used in [calibration/dp_detach.py](/calibration/dp_detach.py) also returns the steady-state cell radius $\ell_0$ and the target $\delta$ value that matches the detachment forces between the deformable-polygon (DP) and finite-Voronoi (FV) models; these quantities can also be saved and reused if needed.
+
+> [WIP] Other panels...
 
 
 ### Other figures
