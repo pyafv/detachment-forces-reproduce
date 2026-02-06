@@ -11,7 +11,7 @@ A0 = np.pi
 P0 = 4.8
 Lambda = 0.2
 
-phys = afv.PhysicalParams(r=l, A0=A0, P0=P0, KA=KA, KP=KP, lambda_tension=Lambda, delta=0.0)
+phys = afv.PhysicalParams(r=l, A0=A0, P0=P0, KA=KA, KP=KP, Lambda=Lambda, delta=0.0)
 sim = afv.FiniteVoronoiSimulator(np.zeros((2,2)), phys)
 
 ds = np.arange(1e-3, 2, 1e-3)  # distances between cell centers

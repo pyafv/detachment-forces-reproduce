@@ -72,7 +72,7 @@ box_size = np.sqrt(N_cell*np.pi/phi)
 
 # Initial the cell center positions in the center of the box
 pts = ((np.random.rand(N_cell, 2) - 0.5) * 0.3 + 0.5) * box_size
-phys = afv.PhysicalParams(r=radius, A0=A0, P0=P0, lambda_tension=tension_difference, delta=0.0)
+phys = afv.PhysicalParams(r=radius, A0=A0, P0=P0, Lambda=tension_difference, delta=0.0)
 sim = afv.FiniteVoronoiSimulator(pts, phys)
 
 # Relax to equilibrium first

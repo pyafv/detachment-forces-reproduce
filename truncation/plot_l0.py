@@ -17,7 +17,7 @@ l0_values = np.zeros((len(Lambdas), len(P0s)))
 
 for i, Lambda in enumerate(Lambdas):
     for j, P0 in enumerate(P0s):
-        phys = afv.PhysicalParams(KA=KA, KP=KP, A0=A0, P0=P0, lambda_tension=Lambda)
+        phys = afv.PhysicalParams(KA=KA, KP=KP, A0=A0, P0=P0, Lambda=Lambda)
         l, d = phys.get_steady_state()
         l0_values[i, j] = l  # record the minimized l0
 

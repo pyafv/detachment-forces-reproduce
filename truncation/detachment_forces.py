@@ -15,7 +15,7 @@ for P0 in P0s:
     for Lambda in Lambdas:
         KP = 1.0
         A0 = np.pi
-        phys = afv.PhysicalParams(r=1.0, KP=KP, A0=A0, P0=P0, lambda_tension=Lambda)
+        phys = afv.PhysicalParams(r=1.0, KP=KP, A0=A0, P0=P0, Lambda=Lambda)
         l0, d0 = phys.get_steady_state()
         dc = np.sqrt(4 * (l0**2) - delta**2)
 
