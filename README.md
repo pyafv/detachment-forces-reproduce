@@ -1,6 +1,7 @@
 # Supplementary code - Divergence of detachment forces in the finite-Voronoi model
 
 [![arXiv:2503.03126](https://img.shields.io/badge/arXiv-26xx.xxxxx-grey.svg?colorB=a42c25&logo=arxiv)](https://doi.org/10.48550/arXiv.26xx.xxxxx)
+[![CI](https://github.com/wwang721/detachment-forces-reproduce/actions/workflows/ci.yml/badge.svg)](https://github.com/wwang721/detachment-forces-reproduce/actions/workflows/ci.yml)
 
 This is the code required to reproduce the results in the paper:
 
@@ -17,7 +18,7 @@ The code was run with **Python 3.11.11** and the following packages:
 | :--------- | :-----: | :--------------------------------------------------------------------------- |
 | numpy      | 2.1.3   | Numerical computations                                                       |
 | matplotlib | 3.10.0  | Plotting and visualization                                                   |
-| scipy      | 1.5.3   | Miscellaneous scientific functions                                           |
+| scipy      | 1.15.3  | Miscellaneous scientific functions                                           |
 | pyafv      | 0.4.5   | Core package; see our [GitHub repository](https://github.com/wwang721/pyafv) |
 | tqdm       | 4.67.1  | Progress bars during calculations                                            |
 | mpi4py     | 4.0.3   | Parallel processing using MPI                                                |
