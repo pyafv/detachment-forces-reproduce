@@ -49,7 +49,11 @@ jobs:
         run: |
           uv run python --version
 
-          cd truncation
+          cd time_step/analysis
+          uv run KMF_survival.py
+          uv run median.py
+
+          cd ../../truncation
           uv run comparison.py
           uv run detachment_forces.py
 

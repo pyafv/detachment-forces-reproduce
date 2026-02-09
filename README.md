@@ -1,9 +1,9 @@
-# Supplementary code - Divergence of detachment forces in the finite-Voronoi model
+# Supplementary code & data - Divergence of detachment forces in the finite-Voronoi model
 
 [![arXiv:2503.03126](https://img.shields.io/badge/arXiv-26xx.xxxxx-grey.svg?colorB=a42c25&logo=arxiv)](https://doi.org/10.48550/arXiv.26xx.xxxxx)
 [![CI](https://github.com/wwang721/detachment-forces-reproduce/actions/workflows/ci.yml/badge.svg)](https://github.com/wwang721/detachment-forces-reproduce/actions/workflows/ci.yml)
 
-This is the code required to reproduce the results in the paper:
+These are the code and data required to reproduce the results in the paper:
 
 - ***Divergence of detachment forces in the finite-Voronoi model***, Wei Wang (汪巍) and Brian A. Camley, **Soft Matter (2026)**.
 
@@ -43,7 +43,7 @@ Figure 1 is the plotting example given by the `pyafv` documentation; click the b
 
 Run [time_step/main.py](/time_step/main.py) (modify the time step $\Delta t$ in line 60) to generate simulation snapshots saved in the [time_step/frames](/time_step/frames/) directory.
 
-> [WIP] Panels (b) and (c)...
+Submit the job to the HPC cluster using [time_step/run.slurm](/time_step/run.slurm) to run [time_step/scan_dt.py](/time_step/scan_dt.py) with two values of $\delta$ ($0$ and $0.45$). The simulation outputs are saved in [time_step/data](/time_step/data). Panels (b) and (c) are then produced by executing [time_step/analysis/KMF_survival.py](/time_step/analysis/KMF_survival.py) and [time_step/analysis/median.py](/time_step/analysis/median.py).
 
 
 ### Figure 4
