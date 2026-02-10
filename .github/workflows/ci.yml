@@ -62,8 +62,8 @@ jobs:
           uv run plot.py
 
           cd fix_delta
-          uv run force_dist_P0_4.8.py
-          uv run force_dist_P0_6.py
+          # uv run force_dist_P0_4.8.py
+          # uv run force_dist_P0_6.py
 
           cd ../match_fdetach
           uv run force_dist_P0_4.8.py

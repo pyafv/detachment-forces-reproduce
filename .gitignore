@@ -209,3 +209,4 @@ __marimo__/
 # Custom additions
 .DS_Store
 **/frames/*.png
+**/phase_diagrams/data/*.npz
