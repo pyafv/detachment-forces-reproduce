@@ -64,6 +64,8 @@ To generate the $P_0$—Λ phase digram for the steady-state $\ell_0$, run [trun
 
 Run [calibration/main.py](/calibration/main.py) to execute the simulation and generate snapshots of a cell doublet subjected to external force dipoles in the deformable-polygon (DP) model.
 
+> [WIP] To plot the detachment forces along the path $\Lambda=\lambda^{(n)}+2K_P P_0$, run [calibration/vary_lambda_c.py](/calibration/vary_lambda_c.py).
+
 To sweep the $P_0$—Λ parameter plane for detachment forces in DP model, submit [calibration/run.slurm](/calibration/run.slurm), which executes [calibration/dp_detach.py](/calibration/dp_detach.py). The results are saved to [calibration/detachment_forces_DP.npy](/calibration/detachment_forces_DP.npy). Then run [calibration/plot.py](/calibration/plot.py) to generate panel (b).
 
 > [!NOTE]

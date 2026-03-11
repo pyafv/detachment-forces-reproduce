@@ -61,6 +61,7 @@ jobs:
           cd ../calibration
           uv run main.py
           uv run plot.py
+          uv run vary_lambda_c.py
 
           cd fix_delta
           # uv run force_dist_P0_4.8.py
