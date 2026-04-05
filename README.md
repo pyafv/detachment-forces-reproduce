@@ -2,6 +2,7 @@
 
 [![arXiv:2503.03126](https://img.shields.io/badge/arXiv-26xx.xxxxx-grey.svg?colorB=a42c25&logo=arxiv)](https://doi.org/10.48550/arXiv.26xx.xxxxx)
 [![CI](https://github.com/wwang721/detachment-forces-reproduce/actions/workflows/ci.yml/badge.svg)](https://github.com/wwang721/detachment-forces-reproduce/actions/workflows/ci.yml)
+[![license](https://img.shields.io/github/license/wwang721/detachment-forces-reproduce)](https://github.com/wwang721/detachment-forces-reproduce/blob/main/LICENSE)
 
 These are the code and data required to reproduce the results in the paper:
 
