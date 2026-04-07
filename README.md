@@ -1,4 +1,4 @@
-# Supplementary code & data - Divergence of detachment forces in the finite-Voronoi model
+# Supplementary code & data - Divergence of detachment forces in the finite Voronoi model
 
 [![arXiv:2503.03126](https://img.shields.io/badge/arXiv-26xx.xxxxx-grey.svg?colorB=a42c25&logo=arxiv)](https://doi.org/10.48550/arXiv.26xx.xxxxx)
 [![CI](https://github.com/wwang721/detachment-forces-reproduce/actions/workflows/ci.yml/badge.svg)](https://github.com/wwang721/detachment-forces-reproduce/actions/workflows/ci.yml)
@@ -6,7 +6,7 @@
 
 These are the code and data required to reproduce the results in the paper:
 
-- ***Divergence of detachment forces in the finite-Voronoi model***, Wei Wang (汪巍) and Brian A. Camley, submitted to **Soft Matter (2026)**.
+- ***Divergence of detachment forces in the finite Voronoi model***, Wei Wang (汪巍) and Brian A. Camley, submitted to **Soft Matter (2026)**.
 
 Preprint version available on **arXiv**: [arXiv:26xx.xxxxx](https://doi.org/10.48550/arXiv.26xx.xxxxx).
 
@@ -20,7 +20,7 @@ The code was run with **Python 3.11.11** and the following packages:
 | numpy      | 2.1.3   | Numerical computations                                                       |
 | matplotlib | 3.10.0  | Plotting and visualization                                                   |
 | scipy      | 1.15.3  | Miscellaneous scientific functions                                           |
-| pyafv      | >=0.4.8 | Core package; see our [GitHub repository](https://github.com/wwang721/pyafv) |
+| pyafv      | >=0.4.8 | Core package; see the [GitHub repository](https://github.com/wwang721/pyafv) |
 | tqdm       | 4.67.1  | Progress bars during calculations                                            |
 | mpi4py     | 4.0.3   | Parallel processing using MPI                                                |
 | lifelines  | 0.30.0  | Survival analysis                                                            |
@@ -51,7 +51,7 @@ Submit the job to the HPC cluster using [time_step/run.slurm](/time_step/run.slu
 
 ### Figure 4
 
-To compare the theory with the simulation results shown in panel (a), run [truncation/comparison.py](/truncation/comparison.py). To compute the detachment forces in the finite-Voronoi model with fixed $\ell=1$ and $\delta=0.45$ [panel (b)], run [truncation/detachment_forces_fix_ell.py](/truncation/detachment_forces_fix_ell.py).
+To compare the theory with the simulation results shown in panel (a), run [truncation/comparison.py](/truncation/comparison.py). To compute the detachment forces in the finite Voronoi model with fixed $\ell=1$ and $\delta=0.45$ [panel (b)], run [truncation/detachment_forces_fix_ell.py](/truncation/detachment_forces_fix_ell.py).
 
 
 ### Figure 5
@@ -61,14 +61,14 @@ To generate the $P_0$—Λ phase digram for the steady-state $\ell_0$, run [trun
 
 ### Figure 6
 
-Run [calibration/main.py](/calibration/main.py) to execute the simulation and generate snapshots of a cell doublet subjected to external force dipoles in the deformable-polygon (DP) model.
+Run [calibration/main.py](/calibration/main.py) to execute the simulation and generate snapshots of a cell doublet subjected to external force dipoles in the deformable polygon (DP) model.
 
 To sweep the $P_0$—Λ parameter plane for detachment forces in DP model, submit [calibration/run.slurm](/calibration/run.slurm), which executes [calibration/dp_detach.py](/calibration/dp_detach.py). The results are saved to [calibration/detachment_forces_DP.npy](/calibration/detachment_forces_DP.npy). Then run [calibration/plot.py](/calibration/plot.py) to generate panel (b).
 
 > [!NOTE]
-> The `auto_calibrate` method used in [calibration/dp_detach.py](/calibration/dp_detach.py) also returns the steady-state cell radius $\ell_0$ and the target $\delta$ value that matches the detachment forces between the deformable-polygon (DP) and finite-Voronoi (FV) models; these quantities can also be saved and reused if needed.
+> The `auto_calibrate` method used in [calibration/dp_detach.py](/calibration/dp_detach.py) also returns the steady-state cell radius $\ell_0$ and the target $\delta$ value that matches the detachment forces between the deformable polygon (DP) and finite Voronoi (FV) models; these quantities can also be saved and reused if needed.
 
-To compute the detachment forces in the finite-Voronoi model with cell radius set to its optimal value $\ell=\ell_0$ and $\delta=0.45$ [panel (c)], run [truncation/detachment_forces.py](/truncation/detachment_forces.py).
+To compute the detachment forces in the finite Voronoi model with cell radius set to its optimal value $\ell=\ell_0$ and $\delta=0.45$ [panel (c)], run [truncation/detachment_forces.py](/truncation/detachment_forces.py).
 
 As shown in panel (d), to plot the detachment forces along the path $\Lambda=\lambda^{(n)}+2K_P P_0$ in the previous phase diagrams, run [calibration/vary_lambda_c.py](/calibration/vary_lambda_c.py).
 

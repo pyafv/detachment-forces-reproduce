@@ -14,7 +14,7 @@ date-released: 2026-3-20
 url: "https://github.com/wwang721/detachment-forces-reproduce"
 preferred-citation:
   type: article
-  title: "Divergence of detachment forces in the finite-Voronoi model"
+  title: "Divergence of detachment forces in the finite Voronoi model"
   authors:
     - family-names: "Wang"
       given-names: "Wei"
