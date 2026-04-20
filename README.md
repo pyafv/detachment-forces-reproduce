@@ -1,6 +1,6 @@
 # Supplementary code & data - Divergence of detachment forces in the finite Voronoi model
 
-[![arXiv:2503.03126](https://img.shields.io/badge/arXiv-26xx.xxxxx-grey.svg?colorB=a42c25&logo=arxiv)](https://doi.org/10.48550/arXiv.26xx.xxxxx)
+[![arXiv:2604.15481](https://img.shields.io/badge/arXiv-2604.15481-grey.svg?colorB=a42c25&logo=arxiv)](https://doi.org/10.48550/arXiv.2604.15481)
 [![CI](https://github.com/wwang721/detachment-forces-reproduce/actions/workflows/ci.yml/badge.svg)](https://github.com/wwang721/detachment-forces-reproduce/actions/workflows/ci.yml)
 [![license](https://img.shields.io/github/license/wwang721/detachment-forces-reproduce)](https://github.com/wwang721/detachment-forces-reproduce/blob/main/LICENSE)
 
@@ -8,7 +8,7 @@ These are the code and data required to reproduce the results in the paper:
 
 - ***Divergence of detachment forces in the finite Voronoi model***, Wei Wang (汪巍) and Brian A. Camley, submitted to **Soft Matter (2026)**.
 
-Preprint version available on **arXiv**: [arXiv:26xx.xxxxx](https://doi.org/10.48550/arXiv.26xx.xxxxx).
+Preprint version available on **arXiv**: [arXiv:2604.15481](https://doi.org/10.48550/arXiv.2604.15481).
 
 
 ## Requirements
