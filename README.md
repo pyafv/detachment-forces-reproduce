@@ -87,6 +87,15 @@ The scripts used to generate the last two phase diagrams [panels (g) and (h)] ar
 The remaining figures are either purely theoretical or minor variants/extensions of those described above and can be generated following analogous procedures.
 
 
+## More information
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19698926.svg)](https://doi.org/10.5281/zenodo.19698926)
+
+- This repository is also archived and cross-listed on [Zenodo](https://doi.org/10.5281/zenodo.19698926).
+- The authors acknowledge support from the National Institutes of Health (NIH) Grant No. R35GM142847.
+- This work was carried out at the Advanced Research Computing at Hopkins (ARCH) core facility, which is supported by the National Science Foundation (NSF) Grant No. OAC1920103.
+
+
 ## License
 
 This project is licensed under the [BSD 3-Clause License](/LICENSE), which essentially means you have the freedom to use, modify, and distribute this code for almost any purpose, including commercial use, as long as you include the license, provide attribution, and do not use the contributors’ names to promote derived products without permission.
